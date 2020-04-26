@@ -25,7 +25,6 @@ def JPEventHBorderData() :
 def JPEventTimeData() :
     return LastEventData['name'], LastEventData['schedule']['beginDate'], LastEventData['schedule']['endDate']
 
-token = "NzAyODA1Nzg1NzM0MDIxMTkx.XqVOCg.VT8TnqkW7ta0H-T8MislBvfEk9E"
 client = discord.Client()
 
 #Discord
@@ -52,5 +51,6 @@ async def on_message(message) :
 
     if message.content == "!명령어" :
         await message.channel.send("!정보 : 일섭 이벤트 정보\n!랭킹 : 일섭 랭킹 정보 (~5000)\n!하이스코어 : 일섭 하이스코어 정보 (~5000)")
-        
+       
+access_token = os.environ["BOT_TOKEN"]
 client.run(token)
