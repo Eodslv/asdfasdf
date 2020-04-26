@@ -1,6 +1,7 @@
 import json
 import discord
 import requests
+import os
 from urllib.request import urlopen
 
 rank = 1
@@ -52,4 +53,5 @@ async def on_message(message) :
     if message.content == "!명령어" :
         await message.channel.send("!정보 : 일섭 이벤트 정보\n!랭킹 : 일섭 랭킹 정보 (~5000)\n!하이스코어 : 일섭 하이스코어 정보 (~5000)")
         
+token = os.environ["BOT_TOKEN"]
 client.run(token)
