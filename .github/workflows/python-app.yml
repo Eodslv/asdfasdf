@@ -18,5 +18,7 @@ jobs:
         pip install discord
         pip install requests
     - name: Discordbot 실행
+      env:
+        BOT_TOKEN: ${{ secrets.BOT_TOKEN }} 
       run: |
         python ./discordbot.py
