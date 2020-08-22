@@ -18,4 +18,4 @@ jobs:
         pip install discord
     - name: Discordbot 실행
       run: |
-        discordbot.py
+        python ./discordbot.py
