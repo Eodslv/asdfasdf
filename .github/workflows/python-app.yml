@@ -16,4 +16,5 @@ jobs:
     - name: Install dependencies
       run: |
         pip install discord
+    - name: Discordbot 실행
         discordbot.py
