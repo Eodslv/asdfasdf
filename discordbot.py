@@ -25,7 +25,7 @@ def JPEventHBorderData() :
 def JPEventTimeData() :
     return LastEventData['name'], LastEventData['schedule']['beginDate'], LastEventData['schedule']['endDate']
 
-token = "NzAyODA1Nzg1NzM0MDIxMTkx.XqVTPw.McvVtKcc5J2Cn75Qbl7ACFSDsxg"
+token = [BOT_TOKEN]
 client = discord.Client()
 
 #Discord
